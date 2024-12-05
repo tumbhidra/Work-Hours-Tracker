@@ -1,0 +1,151 @@
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Site header container */
+.site-header {
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Center logo and title vertically */
+    justify-content: center; /* Center the entire header horizontally */
+    padding: 1px;
+   /* background-color: #000000; /* Optional: Change background color for header */
+}
+
+/* Logo styling */
+.logo {
+    width: 100px; /* Adjust the size of the logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 0; /* Add spacing between logo and title */
+}
+
+/* Title styling */
+.title {
+    font-family: "Edu AU VIC WA NT Hand", cursive; /* Replace with your chosen Google Font */
+    font-size: 24px; /* Adjust the title size */
+    color: rgb(0, 0, 0); /* Change text color */
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 700
+
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Main content area */
+main {
+    margin: 20px auto;
+    max-width: 1200px; /* Restrict max width for large screens */
+    padding: 0 20px;
+}
+
+/* Form styling */
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 100%; /* Full width by default */
+    max-width: 600px; /* Restrict max width for better readability */
+    margin-left: auto;
+    margin-right: auto; /* Center the form */
+}
+
+/* Form labels and inputs */
+form label {
+    display: block;
+    margin: 8px 0 4px;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Button styling */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%; /* Make the button full-width for smaller screens */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Responsive Design */
+
+/* For screens smaller than 768px (tablets and phones) */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    form input, form select {
+        font-size: 14px; /* Slightly smaller input fields */
+    }
+
+    button {
+        font-size: 16px;
+    }
+
+    table th, table td {
+        padding: 8px; /* Smaller padding for table cells */
+        font-size: 14px; /* Smaller font for compact display */
+    }
+}
+
+/* For screens smaller than 480px (phones) */
+@media (max-width: 480px) {
+    header {
+        font-size: 18px; /* Smaller font for the header */
+        padding: 10px;
+    }
+
+    form {
+        padding: 10px;
+    }
+
+    table th, table td {
+        font-size: 12px; /* Reduce font size further for small screens */
+    }
+}
